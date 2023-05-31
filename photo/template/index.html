@@ -1,13 +1,13 @@
 <!-- ベーステンプレートを適用する -->
-{% extends 'base.thml '}
+{% extends 'base.html' %}
 
 <!-- ヘッダー情報のページタイトルを設定する -->
-{% block title %}Photo <Gallery>% endblock %</Gallery>
+{% block title %}Photo Gallery{% endblock %}
 
     {% block contens %}
 
     <!-- タイトルテンプレートの組み込み -->
-    {% include "photos_title.html "}
+    {% include "photos_title.html" %}
 
     <!-- 投稿一覧テンプレートの組み込み -->
     {% include "photos_list.html" %}
